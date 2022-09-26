@@ -1,0 +1,13 @@
+{{>layouts/header}}
+{{#memberid}}
+  <h1>지금 바로 학습을 시작하세요</h1>
+  <a href="/note/write" class="btn btn-info active" role="button">단어장 등록</a>
+{{>user/_list}}
+
+{{/memberid}}
+
+{{^memberid}}
+  <h1>지금 바로 회원가입 하세요</h1>
+  <a href="/user/join" class="btn btn-success active" role="button">회원가입</a>
+{{/memberid}}
+{{>layouts/footer}}
